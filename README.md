@@ -209,7 +209,6 @@ Licensed under **Creative Commons (CC BY 4.0)**
 ---
 
 ## ✅ Notes
-- Logic is identical to prior locked base, extended with NMEA2000.
 - EEPROM wear leveling extends flash life.
 - Temperature compensation uses DS18B20 sensors.
 - RunningAverage library smooths noisy signals.
