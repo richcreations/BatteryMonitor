@@ -4,6 +4,7 @@
 **License:** Creative Commons Attribution (CC-BY)  
 
 This Arduino project monitors two batteries using:
+- **SH-ESP32** Development board
 - **INA226** current/voltage sensors (with external shunts)
 - **DS18B20** temperature sensors
 - State of Charge (SoC) tracking with chemistry-specific OCV tables
