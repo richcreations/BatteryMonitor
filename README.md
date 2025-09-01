@@ -15,6 +15,21 @@ It has been split into multiple files (tabs) for clarity and maintainability.
 
 ---
 
+## 📚 Libraries
+
+The following Arduino libraries are required:
+
+- [NMEA2000](https://github.com/ttlappalainen/NMEA2000) — Core NMEA2000 stack
+- [NMEA2000_esp32](https://github.com/ttlappalainen/NMEA2000_esp32) — ESP32 CAN controller driver
+- [N2kMessages](https://github.com/ttlappalainen/NMEA2000/tree/master/N2kMessages) — PGN message definitions
+- [INA226](https://github.com/RobTillaart/INA226) — INA226 current/voltage sensor driver
+- [OneWire](https://github.com/PaulStoffregen/OneWire) — DS18B20 sensor communication
+- [DallasTemperature](https://github.com/milesburton/Arduino-Temperature-Control-Library) — DS18B20 sensor handling
+- [RunningAverage](https://github.com/RobTillaart/Arduino/tree/master/libraries/RunningAverage) — Data smoothing
+- EEPROM (built into ESP32 Arduino core)
+
+---
+
 ## 📂 File Structure
 
 - **BatteryMonitor.ino** → Minimal entry point (setup + loop).
@@ -193,6 +208,7 @@ Licensed under **Creative Commons (CC BY 4.0)**
 ---
 
 ## ✅ Notes
+- Logic is identical to prior locked base, extended with NMEA2000.
 - EEPROM wear leveling extends flash life.
 - Temperature compensation uses DS18B20 sensors.
 - RunningAverage library smooths noisy signals.
